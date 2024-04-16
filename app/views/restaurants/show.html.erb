@@ -1,0 +1,14 @@
+<h1> <%= @restaurant.name %> </h1>
+<p>  <%= @restaurant.bio %> </p>
+<p> 
+    Clean Score: <%= @restaurant.clean_score %> <br>
+    Price Score: <%= @restaurant.price_score %> <br>
+    Ambiance Score: <%= @restaurant.ambiance_score %>
+</p>
+
+<ul>
+    <li> <%= link_to "Edit", edit_restaurant_path(@restaurant)%> </li>
+</ul>
+
+
+ 

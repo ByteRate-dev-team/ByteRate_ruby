@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  bio: MyString
+  clean_score: 1
+  price_score: 1
+  ambiance_score: 1
+
+two:
+  name: MyString
+  bio: MyString
+  clean_score: 1
+  price_score: 1
+  ambiance_score: 1

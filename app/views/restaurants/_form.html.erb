@@ -1,0 +1,45 @@
+    <%= form_with model: restaurant do |form| %>
+        <div>
+            <%= form.label :name %> <br>
+            <%= form.text_field :name %>
+            <% restaurant.errors.full_messages_for(:name).each do |message| %>
+                <div> <%= message %> </div>
+            <% end %>
+        </div>
+
+        <div>
+            <%= form.label :bio %> <br>
+            <%= form.text_area :bio %>
+            <% restaurant.errors.full_messages_for(:bio).each do |message| %>
+                <div> <%= message %> </div>
+            <% end %>
+        </div>
+
+        <div>
+            <%= form.label :clean_score %> <br>
+            <%= form.number_field :clean_score %>
+            <% restaurant.errors.full_messages_for(:clean_score).each do |message| %>
+                <div> <%= message %> </div>
+            <% end %>
+        </div>
+
+        <div>
+            <%= form.label :price_score %> <br>
+            <%= form.number_field :price_score %>
+            <% restaurant.errors.full_messages_for(:price_score).each do |message| %>
+                <div> <%= message %> </div>
+            <% end %>
+        </div>
+
+        <div>
+            <%= form.label :ambiance_score %> <br>
+            <%= form.number_field :ambiance_score %>
+            <% restaurant.errors.full_messages_for(:ambiance_score).each do |message| %>
+                <div> <%= message %> </div>
+            <% end %>
+        </div>
+
+        <div>
+            <%= form.submit %>
+        </div>
+    <% end %>
